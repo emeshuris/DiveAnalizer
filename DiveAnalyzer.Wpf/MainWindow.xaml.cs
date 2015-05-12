@@ -1,5 +1,4 @@
-﻿using DiveAnalizer.Loader;
-using Microsoft.Research.DynamicDataDisplay;
+﻿using Microsoft.Research.DynamicDataDisplay;
 using Microsoft.Research.DynamicDataDisplay.DataSources;
 using Microsoft.Research.DynamicDataDisplay.PointMarkers;
 using System;
@@ -8,7 +7,7 @@ using System.Linq;
 using System.Windows;
 using System.Windows.Media;
 
-namespace DiveAnalyzer.Wpf
+namespace DiveAnalizer.Wpf
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -23,7 +22,7 @@ namespace DiveAnalyzer.Wpf
 
         private void Window1_Loaded(object sender, RoutedEventArgs e)
         {
-            List<dives> Dives = Loader.ReadFiles();
+            List<dives> Dives = Loader.Loader.ReadFiles();
             dives dive = Dives.FirstOrDefault();
             if (dive == null)
             {

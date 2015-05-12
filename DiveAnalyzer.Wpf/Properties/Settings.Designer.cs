@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DiveAnalyzer.Wpf.Properties
+namespace DiveAnalizer.Wpf.Properties
 {
 
 

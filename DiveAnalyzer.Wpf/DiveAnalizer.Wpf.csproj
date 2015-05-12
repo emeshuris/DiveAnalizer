@@ -112,9 +112,9 @@
       <Project>{22f67eb5-1da6-4ddb-87a4-50cb2f100bf4}</Project>
       <Name>DiveAnalizer.Loader</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DiveAnalyzer.Utilities\DiveAnalyzer.Utilities.csproj">
+    <ProjectReference Include="..\DiveAnalyzer.Utilities\DiveAnalizer.Utilities.csproj">
       <Project>{22d08240-308c-4e32-8b32-420f7eef1bab}</Project>
-      <Name>DiveAnalyzer.Utilities</Name>
+      <Name>DiveAnalizer.Utilities</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
