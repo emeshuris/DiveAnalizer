@@ -7,8 +7,8 @@
     <ProjectGuid>{22D08240-308C-4E32-8B32-420F7EEF1BAB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DiveAnalyzer.Utilities</RootNamespace>
-    <AssemblyName>DiveAnalyzer.Utilities</AssemblyName>
+    <RootNamespace>DiveAnalizer.Utilities</RootNamespace>
+    <AssemblyName>DiveAnalizer.Utilities</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

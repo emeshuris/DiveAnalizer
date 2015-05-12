@@ -7,11 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiveAnalizer.Entities", "Di
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiveAnalizer.Program", "DiveAnalizer.Program\DiveAnalizer.Program.csproj", "{9724FCFE-F804-46E2-921B-B6E4395234D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiveAnalyzer.Wpf", "DiveAnalyzer.Wpf\DiveAnalyzer.Wpf.csproj", "{DB8329EF-3A85-4635-A0A7-2593A93B1A32}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiveAnalizer.Wpf", "DiveAnalyzer.Wpf\DiveAnalizer.Wpf.csproj", "{DB8329EF-3A85-4635-A0A7-2593A93B1A32}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiveAnalizer.Loader", "DiveAnalizer.loader\DiveAnalizer.Loader.csproj", "{22F67EB5-1DA6-4DDB-87A4-50CB2F100BF4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiveAnalyzer.Utilities", "DiveAnalyzer.Utilities\DiveAnalyzer.Utilities.csproj", "{22D08240-308C-4E32-8B32-420F7EEF1BAB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiveAnalizer.Utilities", "DiveAnalyzer.Utilities\DiveAnalizer.Utilities.csproj", "{22D08240-308C-4E32-8B32-420F7EEF1BAB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
