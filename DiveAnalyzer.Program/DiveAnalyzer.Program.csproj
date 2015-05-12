@@ -50,11 +50,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DiveAnalizer.Entities\DiveAnalyzer.Entities.csproj">
+    <ProjectReference Include="..\DiveAnalyzer.Entities\DiveAnalyzer.Entities.csproj">
       <Project>{a0284c8c-2729-4eb2-965b-cb79d016f3f5}</Project>
       <Name>DiveAnalyzer.Entities</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DiveAnalizer.loader\DiveAnalyzer.Loader.csproj">
+    <ProjectReference Include="..\DiveAnalyzer.Loader\DiveAnalyzer.Loader.csproj">
       <Project>{22f67eb5-1da6-4ddb-87a4-50cb2f100bf4}</Project>
       <Name>DiveAnalyzer.Loader</Name>
     </ProjectReference>
