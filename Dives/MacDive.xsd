@@ -1,0 +1,109 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="dives">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element type="xs:string" name="units"/>
+        <xs:element type="xs:string" name="schema"/>
+        <xs:element name="dive">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="date"/>
+              <xs:element type="xs:string" name="identifier"/>
+              <xs:element type="xs:byte" name="diveNumber"/>
+              <xs:element type="xs:byte" name="rating"/>
+              <xs:element type="xs:string" name="country"/>
+              <xs:element type="xs:string" name="location"/>
+              <xs:element type="xs:string" name="site"/>
+              <xs:element type="xs:byte" name="repetitiveDive"/>
+              <xs:element type="xs:float" name="siteLat"/>
+              <xs:element type="xs:float" name="siteLon"/>
+              <xs:element type="xs:string" name="diver"/>
+              <xs:element type="xs:string" name="computer"/>
+              <xs:element type="xs:int" name="serial"/>
+              <xs:element type="xs:float" name="maxDepth"/>
+              <xs:element type="xs:float" name="averageDepth"/>
+              <xs:element type="xs:float" name="cns"/>
+              <xs:element type="xs:string" name="decoModel"/>
+              <xs:element type="xs:short" name="duration"/>
+              <xs:element type="xs:string" name="gasModel"/>
+              <xs:element type="xs:byte" name="surfaceInterval"/>
+              <xs:element type="xs:byte" name="sampleInterval"/>
+              <xs:element type="xs:float" name="tempAir"/>
+              <xs:element type="xs:float" name="tempHigh"/>
+              <xs:element type="xs:float" name="tempLow"/>
+              <xs:element type="xs:string" name="visibility"/>
+              <xs:element type="xs:string" name="weather"/>
+              <xs:element type="xs:string" name="weight"/>
+              <xs:element type="xs:string" name="notes"/>
+              <xs:element type="xs:string" name="diveMaster"/>
+              <xs:element type="xs:string" name="diveOperator"/>
+              <xs:element type="xs:string" name="skipper"/>
+              <xs:element type="xs:string" name="boat"/>
+              <xs:element type="xs:string" name="tags"/>
+              <xs:element type="xs:string" name="types"/>
+              <xs:element type="xs:string" name="buddies"/>
+              <xs:element name="gear">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="item" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="type"/>
+                          <xs:element type="xs:string" name="manufacturer"/>
+                          <xs:element type="xs:string" name="name"/>
+                          <xs:element type="xs:string" name="serial"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="gases">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="gas">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:float" name="pressureStart"/>
+                          <xs:element type="xs:float" name="pressureEnd"/>
+                          <xs:element type="xs:byte" name="oxygen"/>
+                          <xs:element type="xs:byte" name="helium"/>
+                          <xs:element type="xs:byte" name="double"/>
+                          <xs:element type="xs:byte" name="tankSize"/>
+                          <xs:element type="xs:short" name="workingPressure"/>
+                          <xs:element type="xs:string" name="supplyType"/>
+                          <xs:element type="xs:short" name="duration"/>
+                          <xs:element type="xs:string" name="tankName"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="samples">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="sample" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:short" name="time"/>
+                          <xs:element type="xs:float" name="depth"/>
+                          <xs:element type="xs:float" name="pressure"/>
+                          <xs:element type="xs:string" name="alarm"/>
+                          <xs:element type="xs:string" name="extra"/>
+                          <xs:element type="xs:float" name="temperature"/>
+                          <xs:element type="xs:float" name="ppo2"/>
+                          <xs:element type="xs:byte" name="ndt"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
