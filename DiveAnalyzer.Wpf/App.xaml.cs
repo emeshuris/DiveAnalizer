@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace DiveAnalizer.Wpf
+namespace DiveAnalyzer.Wpf
 {
     /// <summary>
     /// Interaction logic for App.xaml

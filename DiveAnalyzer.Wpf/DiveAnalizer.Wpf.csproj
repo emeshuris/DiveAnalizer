@@ -7,8 +7,8 @@
     <ProjectGuid>{DB8329EF-3A85-4635-A0A7-2593A93B1A32}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DiveAnalizer.Wpf</RootNamespace>
-    <AssemblyName>DiveAnalizer.Wpf</AssemblyName>
+    <RootNamespace>DiveAnalyzer.Wpf</RootNamespace>
+    <AssemblyName>DiveAnalyzer.Wpf</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -104,17 +104,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DiveAnalizer.Entities\DiveAnalizer.Entities.csproj">
+    <ProjectReference Include="..\DiveAnalizer.Entities\DiveAnalyzer.Entities.csproj">
       <Project>{a0284c8c-2729-4eb2-965b-cb79d016f3f5}</Project>
-      <Name>DiveAnalizer.Entities</Name>
+      <Name>DiveAnalyzer.Entities</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DiveAnalizer.loader\DiveAnalizer.Loader.csproj">
+    <ProjectReference Include="..\DiveAnalizer.loader\DiveAnalyzer.Loader.csproj">
       <Project>{22f67eb5-1da6-4ddb-87a4-50cb2f100bf4}</Project>
-      <Name>DiveAnalizer.Loader</Name>
+      <Name>DiveAnalyzer.Loader</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DiveAnalyzer.Utilities\DiveAnalizer.Utilities.csproj">
+    <ProjectReference Include="..\DiveAnalyzer.Utilities\DiveAnalyzer.Utilities.csproj">
       <Project>{22d08240-308c-4e32-8b32-420f7eef1bab}</Project>
-      <Name>DiveAnalizer.Utilities</Name>
+      <Name>DiveAnalyzer.Utilities</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

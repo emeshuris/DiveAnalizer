@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{22D08240-308C-4E32-8B32-420F7EEF1BAB}</ProjectGuid>
+    <ProjectGuid>{22F67EB5-1DA6-4DDB-87A4-50CB2F100BF4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DiveAnalizer.Utilities</RootNamespace>
-    <AssemblyName>DiveAnalizer.Utilities</AssemblyName>
+    <RootNamespace>DiveAnalyzer.Loader</RootNamespace>
+    <AssemblyName>DiveAnalyzer.Loader</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,8 +40,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Extensions.cs" />
+    <Compile Include="Loader.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DiveAnalizer.Entities\DiveAnalyzer.Entities.csproj">
+      <Project>{a0284c8c-2729-4eb2-965b-cb79d016f3f5}</Project>
+      <Name>DiveAnalyzer.Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

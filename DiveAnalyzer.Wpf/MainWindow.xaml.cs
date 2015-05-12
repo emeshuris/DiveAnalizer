@@ -7,7 +7,7 @@ using System.Linq;
 using System.Windows;
 using System.Windows.Media;
 
-namespace DiveAnalizer.Wpf
+namespace DiveAnalyzer.Wpf
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

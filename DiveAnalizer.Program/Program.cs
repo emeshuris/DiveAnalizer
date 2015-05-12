@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace DiveAnalizer.Program
+namespace DiveAnalyzer.Program
 {
     class Program
     {

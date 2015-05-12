@@ -2,7 +2,7 @@
 using System.IO;
 using System.Xml.Serialization;
 
-namespace DiveAnalizer.Loader
+namespace DiveAnalyzer.Loader
 {
     public static class Loader
     {

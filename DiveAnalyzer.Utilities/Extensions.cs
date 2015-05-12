@@ -1,4 +1,4 @@
-﻿namespace DiveAnalizer.Utilities
+﻿namespace DiveAnalyzer.Utilities
 {
     //public static class Extensions
     //{
