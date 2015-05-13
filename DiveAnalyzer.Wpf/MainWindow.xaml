@@ -39,8 +39,8 @@
                 <d3:VerticalIntegerAxis Name="pressureAxis"/>
             </d3:ChartPlotter.VerticalAxis>
 
-            <d3:Header FontFamily="Arial" Content="Dive Information"/>
-            <d3:VerticalAxisTitle FontFamily="Arial" Content="Depth"/>
+            <d3:Header FontFamily="Arial" Content="Time Information"/>
+            <d3:VerticalAxisTitle FontFamily="Arial" Content="Pressure"/>
             <d3:HorizontalAxisTitle FontFamily="Arial" Content="Time"/>
         </d3:ChartPlotter>
         <d3:ChartPlotter Name="temperaturePlotter" Grid.Row="2">
@@ -52,7 +52,7 @@
                 <d3:VerticalIntegerAxis Name="temperatureAxis"/>
             </d3:ChartPlotter.VerticalAxis>
 
-            <d3:Header FontFamily="Arial" Content="Dive Information"/>
+            <d3:Header FontFamily="Arial" Content="Temperature Information"/>
             <d3:VerticalAxisTitle FontFamily="Arial" Content="Temperature"/>
             <d3:HorizontalAxisTitle FontFamily="Arial" Content="Time"/>
         </d3:ChartPlotter>

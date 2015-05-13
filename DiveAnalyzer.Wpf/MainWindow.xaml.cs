@@ -40,7 +40,7 @@ namespace DiveAnalyzer.Wpf
             foreach (Entities.DivePoint divePoint in _dive.DivePoints)
             {
                 pressurePoints.Add(new Point(divePoint.Time, Convert.ToDouble(divePoint.Pressure)));
-                depthPoints.Add(new Point(divePoint.Time, Convert.ToDouble(divePoint.Depth)));
+                depthPoints.Add(new Point(divePoint.Time, Convert.ToDouble(divePoint.Depth * -1)));
                 temperaturePoints.Add(new Point(divePoint.Time, Convert.ToDouble(divePoint.Temperature)));
             }
 
