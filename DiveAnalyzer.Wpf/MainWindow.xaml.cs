@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
 using System.Windows.Media;
+using System.Threading.Tasks;
 
 namespace DiveAnalyzer.Wpf
 {
@@ -14,43 +15,33 @@ namespace DiveAnalyzer.Wpf
     /// </summary>
     public partial class MainWindow : Window
     {
+        private Entities.Dive _dive;
+
         public MainWindow()
         {
             InitializeComponent();
             Loaded += new RoutedEventHandler(Window1_Loaded);
         }
 
-        private void Window1_Loaded(object sender, RoutedEventArgs e)
+        private async void Window1_Loaded(object sender, RoutedEventArgs e)
         {
-            List<dives> Dives = Loader.Loader.ReadFiles();
-            dives dive = Dives.FirstOrDefault();
-            if (dive == null)
+            List<Entities.Dive> Dives = (Task<List<Entities.Dive>>.Factory.StartNew(() => DAL.DAL.GetDives())).Result;
+            _dive = Dives.FirstOrDefault();
+
+            if (_dive == null)
             {
                 return;
             }
-
-            var sampleTimes = (from s in dive.dive.samples select s.time).ToList();
-            var samplePressure = (from s in dive.dive.samples select Convert.ToInt32(s.pressure)).ToList();
-            var sampleDepth = (from s in dive.dive.samples select Convert.ToInt32(s.depth)).ToList();
-            var sampleTemperature = (from s in dive.dive.samples select Convert.ToInt32(s.temperature)).ToList();
 
             List<Point> pressurePoints = new List<Point>();
             List<Point> depthPoints = new List<Point>();
             List<Point> temperaturePoints = new List<Point>();
 
-            for (int i = 0; i < samplePressure.Count - 1; i++)
+            foreach (Entities.DivePoint divePoint in _dive.DivePoints)
             {
-                pressurePoints.Add(new Point(sampleTimes[i], samplePressure[i]));
-            }
-
-            for (int i = 0; i < samplePressure.Count - 1; i++)
-            {
-                depthPoints.Add(new Point(sampleTimes[i], sampleDepth[i] * -1));
-            }
-
-            for(int i = 0; i < samplePressure.Count -1; i++)
-            {
-                temperaturePoints.Add(new Point(sampleTimes[i], sampleTemperature[i]));
+                pressurePoints.Add(new Point(divePoint.Time, Convert.ToDouble(divePoint.Pressure)));
+                depthPoints.Add(new Point(divePoint.Time, Convert.ToDouble(divePoint.Depth)));
+                temperaturePoints.Add(new Point(divePoint.Time, Convert.ToDouble(divePoint.Temperature)));
             }
 
             EnumerableDataSource<Point> pressurePointDataSource = new EnumerableDataSource<Point>(pressurePoints);
@@ -79,7 +70,7 @@ namespace DiveAnalyzer.Wpf
 
             temperaturePlotter.AddLineGraph(temperatureDataSource,
                 new Pen(Brushes.Fuchsia, 2),
-                new CirclePointMarker { Size = 2, Fill = Brushes.Yellow },
+                new CirclePointMarker { Size = 2, Fill = Brushes.Green },
                 new PenDescription("Temperature"));
             temperaturePlotter.Viewport.FitToView();
         }
