@@ -7,6 +7,8 @@ using System.Linq;
 using System.Windows;
 using System.Windows.Media;
 using System.Threading.Tasks;
+using System.Net.Http;
+using System.Net.Http.Headers;
 
 namespace DiveAnalyzer.Wpf
 {
@@ -21,10 +23,28 @@ namespace DiveAnalyzer.Wpf
             Loaded += new RoutedEventHandler(Window1_Loaded);
         }
 
+        private async Task<List<Entities.Dive>> GetDives()
+        {
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri("http://localhost:1487/");
+                client.DefaultRequestHeaders.Accept.Clear();
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+                HttpResponseMessage httpResponseMessage = await client.GetAsync("api/dive");
+                if (!httpResponseMessage.IsSuccessStatusCode)
+                {
+                    return null;
+                }
+
+                return await httpResponseMessage.Content.ReadAsAsync<List<Entities.Dive>>();
+            }
+        }
+
+
         private async void Window1_Loaded(object sender, RoutedEventArgs e)
         {
-            List<Entities.Dive> Dives = (Task<List<Entities.Dive>>.Factory.StartNew(() => DAL.DAL.GetDives())).Result;
-            Entities.Dive _dive = Dives.FirstOrDefault();
+            Entities.Dive _dive = (await GetDives()).FirstOrDefault();
 
             if (_dive == null)
             {

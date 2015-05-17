@@ -25,14 +25,14 @@ namespace DiveAnalyzer.Loader
 
                 dive.DivePoints = new List<Entities.DivePoint>();
 
-                foreach(divesDiveSample sample in macDive.dive.samples)
+                foreach (divesDiveSample sample in macDive.dive.samples)
                 {
                     Entities.DivePoint divePoint = new Entities.DivePoint();
 
                     divePoint.Time = sample.time;
                     divePoint.Depth = sample.depth;
                     divePoint.Pressure = sample.pressure;
-                    divePoint.Alarm = sample.alarm;
+                    divePoint.Alarm = sample.alarm ?? null;
                     divePoint.Extra = sample.extra;
                     divePoint.Temperature = sample.temperature;
                     divePoint.PPO2 = sample.ppo2;

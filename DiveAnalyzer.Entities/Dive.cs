@@ -8,9 +8,11 @@ namespace DiveAnalyzer.Entities
     public partial class Dive
     {
         [BsonId]
-        public ObjectId id { get; set; }
+        [BsonRepresentation(BsonType.ObjectId)]
+        public string id { get; set; }
         public string Identifier { get; set; }
         public string Units { get; set; }
+        [BsonDateTimeOptions(Kind = DateTimeKind.Utc)]
         public DateTime DiveStart { get; set; }
         public string DecoModel { get; set; }
         public List<DivePoint> DivePoints { get; set; }
