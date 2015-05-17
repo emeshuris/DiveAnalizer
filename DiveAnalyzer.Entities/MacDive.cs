@@ -16,11 +16,11 @@ public partial class dives
     {
         get
         {
-            return this.unitsField;
+            return unitsField;
         }
         set
         {
-            this.unitsField = value;
+            unitsField = value;
         }
     }
 
@@ -29,11 +29,11 @@ public partial class dives
     {
         get
         {
-            return this.schemaField;
+            return schemaField;
         }
         set
         {
-            this.schemaField = value;
+            schemaField = value;
         }
     }
 
@@ -42,11 +42,11 @@ public partial class dives
     {
         get
         {
-            return this.diveField;
+            return diveField;
         }
         set
         {
-            this.diveField = value;
+            diveField = value;
         }
     }
 }
@@ -137,11 +137,11 @@ public partial class divesDive
     {
         get
         {
-            return this.dateField;
+            return dateField;
         }
         set
         {
-            this.dateField = value;
+            dateField = value;
         }
     }
 
@@ -150,11 +150,11 @@ public partial class divesDive
     {
         get
         {
-            return this.identifierField;
+            return identifierField;
         }
         set
         {
-            this.identifierField = value;
+            identifierField = value;
         }
     }
 
@@ -163,11 +163,11 @@ public partial class divesDive
     {
         get
         {
-            return this.diveNumberField;
+            return diveNumberField;
         }
         set
         {
-            this.diveNumberField = value;
+            diveNumberField = value;
         }
     }
 
@@ -176,11 +176,11 @@ public partial class divesDive
     {
         get
         {
-            return this.ratingField;
+            return ratingField;
         }
         set
         {
-            this.ratingField = value;
+            ratingField = value;
         }
     }
 
@@ -189,11 +189,11 @@ public partial class divesDive
     {
         get
         {
-            return this.countryField;
+            return countryField;
         }
         set
         {
-            this.countryField = value;
+            countryField = value;
         }
     }
 
@@ -202,11 +202,11 @@ public partial class divesDive
     {
         get
         {
-            return this.locationField;
+            return locationField;
         }
         set
         {
-            this.locationField = value;
+            locationField = value;
         }
     }
 
@@ -215,11 +215,11 @@ public partial class divesDive
     {
         get
         {
-            return this.siteField;
+            return siteField;
         }
         set
         {
-            this.siteField = value;
+            siteField = value;
         }
     }
 
@@ -228,11 +228,11 @@ public partial class divesDive
     {
         get
         {
-            return this.repetitiveDiveField;
+            return repetitiveDiveField;
         }
         set
         {
-            this.repetitiveDiveField = value;
+            repetitiveDiveField = value;
         }
     }
 
@@ -241,11 +241,11 @@ public partial class divesDive
     {
         get
         {
-            return this.siteLatField;
+            return siteLatField;
         }
         set
         {
-            this.siteLatField = value;
+            siteLatField = value;
         }
     }
 
@@ -254,11 +254,11 @@ public partial class divesDive
     {
         get
         {
-            return this.siteLonField;
+            return siteLonField;
         }
         set
         {
-            this.siteLonField = value;
+            siteLonField = value;
         }
     }
 
@@ -267,11 +267,11 @@ public partial class divesDive
     {
         get
         {
-            return this.diverField;
+            return diverField;
         }
         set
         {
-            this.diverField = value;
+            diverField = value;
         }
     }
 
@@ -280,11 +280,11 @@ public partial class divesDive
     {
         get
         {
-            return this.computerField;
+            return computerField;
         }
         set
         {
-            this.computerField = value;
+            computerField = value;
         }
     }
 
@@ -293,11 +293,11 @@ public partial class divesDive
     {
         get
         {
-            return this.serialField;
+            return serialField;
         }
         set
         {
-            this.serialField = value;
+            serialField = value;
         }
     }
 
@@ -306,11 +306,11 @@ public partial class divesDive
     {
         get
         {
-            return this.maxDepthField;
+            return maxDepthField;
         }
         set
         {
-            this.maxDepthField = value;
+            maxDepthField = value;
         }
     }
 
@@ -319,11 +319,11 @@ public partial class divesDive
     {
         get
         {
-            return this.averageDepthField;
+            return averageDepthField;
         }
         set
         {
-            this.averageDepthField = value;
+            averageDepthField = value;
         }
     }
 
@@ -332,11 +332,11 @@ public partial class divesDive
     {
         get
         {
-            return this.cnsField;
+            return cnsField;
         }
         set
         {
-            this.cnsField = value;
+            cnsField = value;
         }
     }
 
@@ -345,11 +345,11 @@ public partial class divesDive
     {
         get
         {
-            return this.decoModelField;
+            return decoModelField;
         }
         set
         {
-            this.decoModelField = value;
+            decoModelField = value;
         }
     }
 
@@ -358,11 +358,11 @@ public partial class divesDive
     {
         get
         {
-            return this.durationField;
+            return durationField;
         }
         set
         {
-            this.durationField = value;
+            durationField = value;
         }
     }
 
@@ -371,11 +371,11 @@ public partial class divesDive
     {
         get
         {
-            return this.gasModelField;
+            return gasModelField;
         }
         set
         {
-            this.gasModelField = value;
+            gasModelField = value;
         }
     }
 
@@ -384,11 +384,11 @@ public partial class divesDive
     {
         get
         {
-            return this.surfaceIntervalField;
+            return surfaceIntervalField;
         }
         set
         {
-            this.surfaceIntervalField = value;
+            surfaceIntervalField = value;
         }
     }
 
@@ -397,11 +397,11 @@ public partial class divesDive
     {
         get
         {
-            return this.sampleIntervalField;
+            return sampleIntervalField;
         }
         set
         {
-            this.sampleIntervalField = value;
+            sampleIntervalField = value;
         }
     }
 
@@ -410,11 +410,11 @@ public partial class divesDive
     {
         get
         {
-            return this.tempAirField;
+            return tempAirField;
         }
         set
         {
-            this.tempAirField = value;
+            tempAirField = value;
         }
     }
 
@@ -423,11 +423,11 @@ public partial class divesDive
     {
         get
         {
-            return this.tempHighField;
+            return tempHighField;
         }
         set
         {
-            this.tempHighField = value;
+            tempHighField = value;
         }
     }
 
@@ -436,11 +436,11 @@ public partial class divesDive
     {
         get
         {
-            return this.tempLowField;
+            return tempLowField;
         }
         set
         {
-            this.tempLowField = value;
+            tempLowField = value;
         }
     }
 
@@ -449,11 +449,11 @@ public partial class divesDive
     {
         get
         {
-            return this.visibilityField;
+            return visibilityField;
         }
         set
         {
-            this.visibilityField = value;
+            visibilityField = value;
         }
     }
 
@@ -462,11 +462,11 @@ public partial class divesDive
     {
         get
         {
-            return this.weatherField;
+            return weatherField;
         }
         set
         {
-            this.weatherField = value;
+            weatherField = value;
         }
     }
 
@@ -475,11 +475,11 @@ public partial class divesDive
     {
         get
         {
-            return this.weightField;
+            return weightField;
         }
         set
         {
-            this.weightField = value;
+            weightField = value;
         }
     }
 
@@ -488,11 +488,11 @@ public partial class divesDive
     {
         get
         {
-            return this.notesField;
+            return notesField;
         }
         set
         {
-            this.notesField = value;
+            notesField = value;
         }
     }
 
@@ -501,11 +501,11 @@ public partial class divesDive
     {
         get
         {
-            return this.diveMasterField;
+            return diveMasterField;
         }
         set
         {
-            this.diveMasterField = value;
+            diveMasterField = value;
         }
     }
 
@@ -514,11 +514,11 @@ public partial class divesDive
     {
         get
         {
-            return this.diveOperatorField;
+            return diveOperatorField;
         }
         set
         {
-            this.diveOperatorField = value;
+            diveOperatorField = value;
         }
     }
 
@@ -527,11 +527,11 @@ public partial class divesDive
     {
         get
         {
-            return this.skipperField;
+            return skipperField;
         }
         set
         {
-            this.skipperField = value;
+            skipperField = value;
         }
     }
 
@@ -540,11 +540,11 @@ public partial class divesDive
     {
         get
         {
-            return this.boatField;
+            return boatField;
         }
         set
         {
-            this.boatField = value;
+            boatField = value;
         }
     }
 
@@ -553,11 +553,11 @@ public partial class divesDive
     {
         get
         {
-            return this.tagsField;
+            return tagsField;
         }
         set
         {
-            this.tagsField = value;
+            tagsField = value;
         }
     }
 
@@ -566,11 +566,11 @@ public partial class divesDive
     {
         get
         {
-            return this.typesField;
+            return typesField;
         }
         set
         {
-            this.typesField = value;
+            typesField = value;
         }
     }
 
@@ -579,11 +579,11 @@ public partial class divesDive
     {
         get
         {
-            return this.buddiesField;
+            return buddiesField;
         }
         set
         {
-            this.buddiesField = value;
+            buddiesField = value;
         }
     }
 
@@ -593,11 +593,11 @@ public partial class divesDive
     {
         get
         {
-            return this.gearField;
+            return gearField;
         }
         set
         {
-            this.gearField = value;
+            gearField = value;
         }
     }
 
@@ -606,11 +606,11 @@ public partial class divesDive
     {
         get
         {
-            return this.gasesField;
+            return gasesField;
         }
         set
         {
-            this.gasesField = value;
+            gasesField = value;
         }
     }
 
@@ -620,11 +620,11 @@ public partial class divesDive
     {
         get
         {
-            return this.samplesField;
+            return samplesField;
         }
         set
         {
-            this.samplesField = value;
+            samplesField = value;
         }
     }
 }
@@ -647,11 +647,11 @@ public partial class divesDiveItem
     {
         get
         {
-            return this.typeField;
+            return typeField;
         }
         set
         {
-            this.typeField = value;
+            typeField = value;
         }
     }
 
@@ -660,11 +660,11 @@ public partial class divesDiveItem
     {
         get
         {
-            return this.manufacturerField;
+            return manufacturerField;
         }
         set
         {
-            this.manufacturerField = value;
+            manufacturerField = value;
         }
     }
 
@@ -673,11 +673,11 @@ public partial class divesDiveItem
     {
         get
         {
-            return this.nameField;
+            return nameField;
         }
         set
         {
-            this.nameField = value;
+            nameField = value;
         }
     }
 
@@ -686,11 +686,11 @@ public partial class divesDiveItem
     {
         get
         {
-            return this.serialField;
+            return serialField;
         }
         set
         {
-            this.serialField = value;
+            serialField = value;
         }
     }
 }
@@ -707,11 +707,11 @@ public partial class divesDiveGases
     {
         get
         {
-            return this.gasField;
+            return gasField;
         }
         set
         {
-            this.gasField = value;
+            gasField = value;
         }
     }
 }
@@ -746,11 +746,11 @@ public partial class divesDiveGasesGas
     {
         get
         {
-            return this.pressureStartField;
+            return pressureStartField;
         }
         set
         {
-            this.pressureStartField = value;
+            pressureStartField = value;
         }
     }
 
@@ -759,11 +759,11 @@ public partial class divesDiveGasesGas
     {
         get
         {
-            return this.pressureEndField;
+            return pressureEndField;
         }
         set
         {
-            this.pressureEndField = value;
+            pressureEndField = value;
         }
     }
 
@@ -772,11 +772,11 @@ public partial class divesDiveGasesGas
     {
         get
         {
-            return this.oxygenField;
+            return oxygenField;
         }
         set
         {
-            this.oxygenField = value;
+            oxygenField = value;
         }
     }
 
@@ -785,11 +785,11 @@ public partial class divesDiveGasesGas
     {
         get
         {
-            return this.heliumField;
+            return heliumField;
         }
         set
         {
-            this.heliumField = value;
+            heliumField = value;
         }
     }
 
@@ -798,11 +798,11 @@ public partial class divesDiveGasesGas
     {
         get
         {
-            return this.doubleField;
+            return doubleField;
         }
         set
         {
-            this.doubleField = value;
+            doubleField = value;
         }
     }
 
@@ -811,11 +811,11 @@ public partial class divesDiveGasesGas
     {
         get
         {
-            return this.tankSizeField;
+            return tankSizeField;
         }
         set
         {
-            this.tankSizeField = value;
+            tankSizeField = value;
         }
     }
 
@@ -824,11 +824,11 @@ public partial class divesDiveGasesGas
     {
         get
         {
-            return this.workingPressureField;
+            return workingPressureField;
         }
         set
         {
-            this.workingPressureField = value;
+            workingPressureField = value;
         }
     }
 
@@ -837,11 +837,11 @@ public partial class divesDiveGasesGas
     {
         get
         {
-            return this.supplyTypeField;
+            return supplyTypeField;
         }
         set
         {
-            this.supplyTypeField = value;
+            supplyTypeField = value;
         }
     }
 
@@ -850,11 +850,11 @@ public partial class divesDiveGasesGas
     {
         get
         {
-            return this.durationField;
+            return durationField;
         }
         set
         {
-            this.durationField = value;
+            durationField = value;
         }
     }
 
@@ -863,11 +863,11 @@ public partial class divesDiveGasesGas
     {
         get
         {
-            return this.tankNameField;
+            return tankNameField;
         }
         set
         {
-            this.tankNameField = value;
+            tankNameField = value;
         }
     }
 }
@@ -898,11 +898,11 @@ public partial class divesDiveSample
     {
         get
         {
-            return this.timeField;
+            return timeField;
         }
         set
         {
-            this.timeField = value;
+            timeField = value;
         }
     }
 
@@ -911,11 +911,11 @@ public partial class divesDiveSample
     {
         get
         {
-            return this.depthField;
+            return depthField;
         }
         set
         {
-            this.depthField = value;
+            depthField = value;
         }
     }
 
@@ -924,11 +924,11 @@ public partial class divesDiveSample
     {
         get
         {
-            return this.pressureField;
+            return pressureField;
         }
         set
         {
-            this.pressureField = value;
+            pressureField = value;
         }
     }
 
@@ -937,11 +937,11 @@ public partial class divesDiveSample
     {
         get
         {
-            return this.alarmField;
+            return alarmField;
         }
         set
         {
-            this.alarmField = value;
+            alarmField = value;
         }
     }
 
@@ -950,11 +950,11 @@ public partial class divesDiveSample
     {
         get
         {
-            return this.extraField;
+            return extraField;
         }
         set
         {
-            this.extraField = value;
+            extraField = value;
         }
     }
 
@@ -963,11 +963,11 @@ public partial class divesDiveSample
     {
         get
         {
-            return this.temperatureField;
+            return temperatureField;
         }
         set
         {
-            this.temperatureField = value;
+            temperatureField = value;
         }
     }
 
@@ -976,11 +976,11 @@ public partial class divesDiveSample
     {
         get
         {
-            return this.ppo2Field;
+            return ppo2Field;
         }
         set
         {
-            this.ppo2Field = value;
+            ppo2Field = value;
         }
     }
 
@@ -989,11 +989,11 @@ public partial class divesDiveSample
     {
         get
         {
-            return this.ndtField;
+            return ndtField;
         }
         set
         {
-            this.ndtField = value;
+            ndtField = value;
         }
     }
     public override string ToString()

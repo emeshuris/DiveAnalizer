@@ -84,6 +84,7 @@
     <CodesignKey>iPhone Distribution</CodesignKey>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="ChartHelper.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <None Include="GettingStarted.Xamarin" />
@@ -99,6 +100,17 @@
     <BundleResource Include="Resources\Default-568h%402x.png" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="Alliance.Charts">
+      <HintPath>..\..\..\..\..\Desktop\Alliance.Charts.dll</HintPath>
+    </Reference>
+    <Reference Include="DiveAnalyzer.DAL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DiveAnalyzer.DAL\bin\Debug\DiveAnalyzer.DAL.dll</HintPath>
+    </Reference>
+    <Reference Include="DiveAnalyzer.Entities, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DiveAnalyzer.Entities\bin\Debug\DiveAnalyzer.Entities.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />

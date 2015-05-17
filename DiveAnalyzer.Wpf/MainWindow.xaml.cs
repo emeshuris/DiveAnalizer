@@ -15,8 +15,6 @@ namespace DiveAnalyzer.Wpf
     /// </summary>
     public partial class MainWindow : Window
     {
-        private Entities.Dive _dive;
-
         public MainWindow()
         {
             InitializeComponent();
@@ -26,7 +24,7 @@ namespace DiveAnalyzer.Wpf
         private async void Window1_Loaded(object sender, RoutedEventArgs e)
         {
             List<Entities.Dive> Dives = (Task<List<Entities.Dive>>.Factory.StartNew(() => DAL.DAL.GetDives())).Result;
-            _dive = Dives.FirstOrDefault();
+            Entities.Dive _dive = Dives.FirstOrDefault();
 
             if (_dive == null)
             {
