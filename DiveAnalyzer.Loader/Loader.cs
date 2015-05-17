@@ -8,7 +8,7 @@ namespace DiveAnalyzer.Loader
     public static class Loader
     {
         public static List<dives> Dives = new List<dives>();
-        public const string DIVE_DIR_PATH = @"C:\Users\emeshuris\Source\Repos\DiveAnalyzer\Dives";
+        public const string DIVE_DIR_PATH = @"C:\Users\edward\Documents\Visual Studio 2015\Projects\DiveAnalyzer\Dives";
 
         public static List<Entities.Dive> GetDives()
         {

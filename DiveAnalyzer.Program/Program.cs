@@ -8,15 +8,23 @@ namespace DiveAnalyzer.Program
     {
         static void Main(string[] args)
         {
-            //var dives = Loader.Loader.GetDives();
+            try
+            {
+                //var dives = Loader.Loader.GetDives();
 
-            //foreach (Entities.Dive dive in dives)
-            //{
-            //    DAL.DAL.InsertDive(dive);
-            //}
+                //foreach (Entities.Dive dive in dives)
+                //{
+                //    DAL.DAL.InsertDive(dive);
+                //}
 
-            List<Entities.Dive> Dives = DAL.DAL.GetDives();
-            Entities.Dive dive = Dives.FirstOrDefault();
+                List<Entities.Dive> Dives = DAL.DAL.GetDives();
+                Entities.Dive dive = Dives.FirstOrDefault();
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
 
             Console.WriteLine("");
             Console.WriteLine("");

@@ -4,7 +4,8 @@ namespace DiveAnalyzer.DAL
 {
     public static class MongoHelper
     {
-        private const string connectionString = "mongodb://diveAnalyzerAdmin:unlockme@localhost/DiveAnalyzer";
+        //private const string connectionString = "mongodb://diveAnalyzerAdmin:unlockme@192.168.9.201/DiveAnalyzer";
+        private const string connectionString = "mongodb://192.168.9.201:27017/DiveLogAnalyzer";
         private const string databaseName = "DiveAnalyzer";
         private const string collectionName = "Dive";
 
