@@ -27,7 +27,7 @@ namespace DiveAnalyzer.Wpf
         {
             using (var client = new HttpClient())
             {
-                client.BaseAddress = new Uri("http://localhost:1487/");
+                client.BaseAddress = new Uri("http://localhost/DiveAnalyzer.API/");
                 client.DefaultRequestHeaders.Accept.Clear();
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
